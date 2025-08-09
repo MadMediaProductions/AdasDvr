@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:left="@dimen/icon_padding" android:top="@dimen/icon_padding" android:right="@dimen/icon_padding" android:bottom="@dimen/icon_padding">
+                <shape android:shape="oval">
+                    <solid android:color="#26458b74"/>
+                </shape>
+            </item>
+            <item android:left="@dimen/icon_padding1" android:top="@dimen/icon_padding1" android:right="@dimen/icon_padding1" android:bottom="@dimen/icon_padding1">
+                <shape android:shape="oval">
+                    <solid android:color="#7f458b74"/>
+                </shape>
+            </item>
+            <item android:left="@dimen/icon_padding2" android:top="@dimen/icon_padding2" android:right="@dimen/icon_padding2" android:bottom="@dimen/icon_padding2">
+                <shape android:shape="oval">
+                    <solid android:color="#458b74"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="true">
+        <layer-list>
+            <item android:left="@dimen/icon_padding" android:top="@dimen/icon_padding" android:right="@dimen/icon_padding" android:bottom="@dimen/icon_padding">
+                <shape android:shape="oval">
+                    <solid android:color="#26458b74"/>//9b9b9b\10
+                </shape>
+            </item>
+            <item android:left="@dimen/icon_padding2" android:top="@dimen/icon_padding2" android:right="@dimen/icon_padding2" android:bottom="@dimen/icon_padding2">
+                <shape android:shape="oval">
+                    <solid android:color="#ff458b74"/>//699b9b9b     ff008080正式版本\10
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

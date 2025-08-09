@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/left_menu" android:background="#33000000" android:visibility="gone" android:layout_width="160px" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_playback_1" android:padding="@dimen/left_menu_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.fvision.camera.view.customview.ImageViewSquare android:layout_gravity="center_horizontal" android:background="@mipmap/playback" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/left_menu_text_size" android:textColor="@color/WHITE" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8px" android:text="@string/playback_mode"/>
+    </LinearLayout>
+    <View android:background="@color/BLACK" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_setting_1" android:padding="@dimen/left_menu_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.fvision.camera.view.customview.ImageViewSquare android:layout_gravity="center_horizontal" android:background="@mipmap/setting" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/left_menu_text_size" android:textColor="@color/WHITE" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8px" android:text="@string/setting"/>
+    </LinearLayout>
+    <View android:background="@color/BLACK" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_format_ft" android:padding="@dimen/left_menu_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.fvision.camera.view.customview.ImageViewSquare android:layout_gravity="center_horizontal" android:background="@mipmap/format_tf" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/left_menu_text_size" android:textColor="@color/WHITE" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8px" android:text="@string/format_tf" android:singleLine="true"/>
+    </LinearLayout>
+    <View android:background="@color/BLACK" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_hotspot_1" android:padding="@dimen/left_menu_padding" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.fvision.camera.view.customview.ImageViewSquare android:layout_gravity="center_horizontal" android:background="@mipmap/hotspot" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/left_menu_text_size" android:textColor="@color/WHITE" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8px" android:text="@string/version"/>
+    </LinearLayout>
+</LinearLayout>

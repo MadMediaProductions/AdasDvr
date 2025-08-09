@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="@dimen/y40">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/id_ll_sample_back" android:background="@drawable/button_bg" android:layout_width="@dimen/y40" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageButton android:background="@color/TRANSPARENT" android:clickable="false" android:layout_width="50dp" android:layout_height="match_parent" android:src="@mipmap/synmoon_icon_back" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/id_tv_sample_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

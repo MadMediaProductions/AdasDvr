@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/BLACK" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/rootview" android:background="@color/BLACK" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back" android:background="@drawable/back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="26sp" android:textColor="@color/WHITE" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/playback_mode" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:background="@android:drawable/title_bar" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/activity_playback" android:background="@color/BLACK" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:weightSum="3">
+                <TextView android:textSize="18sp" android:textColor="@drawable/file_list_text_color" android:gravity="center_horizontal" android:id="@+id/record_normal" android:layout_width="wrap_content" android:layout_height="0dp" android:text="@string/record_video" android:drawableTop="@drawable/file_list_record_selecotr" android:layout_weight="1"/>
+                <TextView android:textSize="18sp" android:textColor="@drawable/file_list_text_color" android:gravity="center_horizontal" android:id="@+id/record_lock" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="16dp" android:text="@string/lock_video" android:drawableTop="@drawable/file_list_lock_selector" android:layout_weight="1"/>
+                <TextView android:textSize="18sp" android:textColor="@drawable/file_list_text_color" android:gravity="center_horizontal" android:id="@+id/take_picture" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="16dp" android:text="@string/picture" android:drawableTop="@drawable/file_list_pic_selector" android:layout_weight="1"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

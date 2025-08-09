@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_sound_model">
+        <item>模式一</item>
+        <item>模式二</item>
+    </array>
+    <array name="array_video_duration">
+        <item>1 分钟</item>
+        <item>2 分钟</item>
+        <item>3 分钟</item>
+    </array>
+</resources>

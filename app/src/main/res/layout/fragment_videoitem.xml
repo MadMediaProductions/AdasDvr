@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textColor="@color/WHITE" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/filename" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8px" android:layout_weight="6"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="12sp" android:textColor="@color/GRAY" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/file_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <TextView android:textColor="@color/WHITE" android:layout_gravity="center_vertical" android:id="@+id/delete" android:background="@drawable/adas_set_btn" android:padding="8px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8px" android:text="@string/delete"/>
+</LinearLayout>

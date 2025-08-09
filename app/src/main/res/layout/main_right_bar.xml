@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/right_bar" android:layout_width="140dp" android:layout_height="match_parent" android:layout_marginTop="32px" android:layout_marginRight="16px" android:layout_marginBottom="32px" android:layout_alignParentRight="true">
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="6px" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="4">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="6px" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="2">
+            <Space android:id="@+id/upSpace" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <com.fvision.camera.view.customview.IconView android:layout_gravity="center_vertical" android:id="@+id/edog_switch_up" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" app:bg_nor="@mipmap/edog_icon_nor"/>
+            <com.fvision.camera.view.customview.IconView android:layout_gravity="center_vertical" android:id="@+id/adas_switch_down" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="6px" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="2">
+            <com.fvision.camera.view.customview.IconView android:layout_gravity="center_vertical" android:id="@+id/home" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" app:bg_nor="@mipmap/home_iv"/>
+            <com.fvision.camera.view.customview.IconView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" app:bg_nor="@mipmap/back_press"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="48px" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/about_text_size" android:textColor="@color/WHITE" android:id="@+id/appversion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前版本:"/>
+            <TextView android:textSize="@dimen/about_text_size" android:textColor="@color/WHITE" android:id="@+id/deviceversion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24px" android:text="固件版本:"/>
+        </LinearLayout>
+        <View android:background="@color/BLACK" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+        <TextView android:textSize="@dimen/about_text_size" android:textColor="@color/main_color" android:gravity="center" android:id="@+id/check_update" android:padding="16px" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/checkupdate"/>
+        <View android:background="@color/BLACK" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+        <TextView android:textSize="@dimen/about_text_size" android:textColor="@color/main_color" android:gravity="center" android:id="@+id/check_dev_update" android:padding="16px" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/checkdevupdate"/>
+        <View android:background="@color/BLACK" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+        <TextView android:textSize="@dimen/about_text_size" android:textColor="@color/main_color" android:gravity="center" android:id="@+id/test_get_pic" android:padding="16px" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="获取图片"/>
+        <View android:background="@color/BLACK" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+        <TextView android:textSize="@dimen/about_text_size" android:textColor="@color/main_color" android:gravity="center" android:id="@+id/back" android:padding="16px" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/back"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_sound_model">
+        <item>model 1</item>
+        <item>model 2</item>
+    </array>
+    <array name="array_video_duration">
+        <item>1 minute</item>
+        <item>2 minute</item>
+        <item>3 minute</item>
+    </array>
+</resources>

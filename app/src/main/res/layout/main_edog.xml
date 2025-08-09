@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/edog_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+    <ImageView android:id="@+id/iv_gps_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/edog_no_gps" android:layout_centerHorizontal="true"/>
+    <Space android:layout_width="10dp" android:layout_height="10dp"/>
+    <TextView android:textColor="@android:color/white" android:id="@+id/ave_speed_limit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="平均限速"/>
+    <TextView android:textColor="@android:color/white" android:id="@+id/zone_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="区间距离"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@mipmap/edog_fx_bg" android:layout_width="100dp" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@+id/main_iv_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@mipmap/edog_fxjt"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/main_tv_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+    </LinearLayout>
+    <Space android:layout_width="20dp" android:layout_height="10dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="50sp" android:textColor="@android:color/holo_red_dark" android:id="@+id/car_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="车速"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_red_dark" android:id="@+id/speed_unit_kmh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_kmh"/>
+        <TextView android:textColor="@android:color/white" android:id="@+id/data_version" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数据版本"/>
+    </LinearLayout>
+    <Space android:layout_width="20dp" android:layout_height="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/main_iv_warntype" android:layout_width="100dp" android:layout_height="100dp"/>
+        <ImageView android:id="@+id/main_iv_warnspeed" android:layout_width="100dp" android:layout_height="100dp"/>
+        <TextView android:textSize="50sp" android:textColor="#ff0000" android:id="@+id/main_tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+    </LinearLayout>
+    <Space android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="22sp" android:textColor="@android:color/white" android:id="@+id/block_tv_speed_lb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="平均速度"/>
+            <TextView android:textSize="30sp" android:textColor="#ff0000" android:id="@+id/block_tv_speed" android:layout_width="wrap_content" android:layout_height="40sp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/block_iv_limitspeed" android:layout_width="60dp" android:layout_height="60dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="22sp" android:textColor="@android:color/white" android:id="@+id/block_tv_space_lb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="区间距离"/>
+            <TextView android:textSize="30sp" android:textColor="#ff0000" android:id="@+id/block_tv_space" android:layout_width="wrap_content" android:layout_height="40sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Space android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp"/>
+</LinearLayout>

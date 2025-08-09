@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" >
+    <RelativeLayout android:id="@+id/rootview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.opengl.GLSurfaceView android:id="@+id/glsurfaceview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/main_adas"/>
+        <TextView android:textSize="30sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/sanction_tips" android:background="#88000000" android:visibility="gone" android:layout_width="500dp" android:layout_height="300dp" android:layout_marginTop="60dp" android:text="@string/sanction_tips" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <include layout="@layout/main_no_signal"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="18dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_direction" android:layout_width="@dimen/gps_width" android:layout_height="@dimen/gps_height" android:layout_marginBottom="5dp" android:scaleType="centerInside"/>
+            <LinearLayout android:gravity="center" android:id="@+id/gps_backgroup" android:background="@mipmap/speed" android:layout_width="@dimen/gps_width" android:layout_height="@dimen/gps_height">
+                <ImageView android:id="@+id/iv_speed_01" android:layout_width="@dimen/speed_size" android:layout_height="@dimen/speed_size" android:scaleType="centerInside"/>
+                <ImageView android:id="@+id/iv_speed_02" android:layout_width="@dimen/speed_size" android:layout_height="@dimen/speed_size" android:scaleType="centerInside"/>
+                <ImageView android:id="@+id/iv_speed_03" android:layout_width="@dimen/speed_size" android:layout_height="@dimen/speed_size" android:scaleType="centerInside"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/main_left_bar"/>
+            <include layout="@layout/main_state_layout"/>
+            <include layout="@layout/main_right_bar"/>
+            <include layout="@layout/main_edog"/>
+            <ImageView android:id="@+id/photo_preview" android:visibility="gone" android:layout_width="160px" android:layout_height="120px" android:layout_marginRight="24px" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <include layout="@layout/main_setting_layout"/>
+        </RelativeLayout>
+        <TextView android:textSize="22sp" android:textColor="#f4f708" android:id="@+id/test_version" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/test_version"/>
+        <ProgressBar android:id="@+id/app_upgrade_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="7.5dp" android:layout_marginLeft="100dp" android:layout_marginRight="100dp" android:layout_marginBottom="20dp" android:max="100" android:progress="80" android:progressDrawable="@drawable/progress_bar_layer_list" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+        <TextView android:textColor="#23d3ff" android:id="@+id/app_upgrade_progress_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_above="@+id/app_upgrade_progress" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

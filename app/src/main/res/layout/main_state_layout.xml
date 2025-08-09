@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+    <ImageView android:id="@+id/lock_state" android:background="@drawable/lock_selecter" android:visibility="gone" android:layout_width="@dimen/top_state_size" android:layout_height="@dimen/top_state_size" android:layout_marginLeft="8dp"/>
+    <ImageView android:id="@+id/tf_state" android:background="@drawable/tf_card_selecter" android:layout_width="@dimen/top_state_size" android:layout_height="@dimen/top_state_size" android:layout_marginLeft="8dp"/>
+    <ImageView android:id="@+id/camera_mic_state" android:background="@drawable/camera_mic_state_selector" android:layout_width="@dimen/top_state_size" android:layout_height="@dimen/top_state_size"/>
+    <ImageView android:id="@+id/camera_recording_state" android:background="@drawable/record_anim" android:visibility="gone" android:layout_width="@dimen/top_state_size" android:layout_height="@dimen/top_state_size" android:layout_marginRight="8px"/>
+</LinearLayout>
